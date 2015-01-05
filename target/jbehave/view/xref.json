@@ -1,0 +1,48 @@
+{"xref": {
+  "whenMade": 1420459952315,
+  "createdBy": "JBehave",
+  "metaFilter": "-ignore",
+  "meta": [],
+  "stories": [
+    {
+      "description": "",
+      "narrative": "",
+      "name": "AddingAFieldToTheTable_sample2.story",
+      "path": "thucydidesTest/stories/consult_dictionary/AddingAFieldToTheTable_sample2.story",
+      "html": "thucydidesTest.stories.consult_dictionary.AddingAFieldToTheTable_sample2.html",
+      "meta": "",
+      "scenarios": "Scenario:Adding a field to the table with parametrs: <firstName>, <lastName>, <category>, <gender>\u000aGiven the user is on the Ranorex web page\u000aAnd the user enter <firstName> into First Name field, <lastName> into Last Name field, chose <category> from the list Category and choose <gender> from Gender\u000aWhen the user press button Add\u000aThen line is added to the table with the previously entered parameters <firstName> into the field First Name\u000aAnd line is added to the table with the previously entered parameters <lastName> into the field Last Name\u000aAnd line is added to the table with the previously entered parameters <gender> into the field Gender\u000aAnd line is added to the table with the previously entered parameters <category> into the field Category\u000a\u000a\u000a",
+      "passed": false,
+      "pending": false,
+      "started": 1420459945788,
+      "duration": 2999
+    },
+    {
+      "description": "",
+      "narrative": "",
+      "name": "Adding2FieldsToTheTable.story",
+      "path": "thucydidesTest/stories/consult_dictionary/Adding2FieldsToTheTable.story",
+      "html": "thucydidesTest.stories.consult_dictionary.Adding2FieldsToTheTable.html",
+      "meta": "",
+      "scenarios": "Scenario:Adding 2 fields to the table\u000aGiven the user is on the Ranorex web page\u000aGiven the user enter first name Frank\u000aGiven the user enter last name Sinatra\u000aWhen the user press button 'Add' first time\u000aGiven the user enter first name Kings\u000aGiven the user enter last name Of Leon\u000aWhen the user press button 'Add' second time\u000aThen vip count should be 2\u000a\u000a\u000a",
+      "passed": false,
+      "pending": false,
+      "started": 1420459945802,
+      "duration": 718
+    },
+    {
+      "description": "",
+      "narrative": "",
+      "name": "AddingAFieldToTheTable.story",
+      "path": "thucydidesTest/stories/consult_dictionary/AddingAFieldToTheTable.story",
+      "html": "thucydidesTest.stories.consult_dictionary.AddingAFieldToTheTable.html",
+      "meta": "",
+      "scenarios": "Scenario:Adding a field to the table with parametrs: <firstName>, <lastName>, <category>, <gender>\u000aGiven the user is on the Ranorex web page\u000aAnd the user enter <firstName> into First Name field, <lastName> into Last Name field, chose <category> from the list Category and choose <gender> from Gender\u000aWhen the user press button Add\u000aThen line is added to the table with the previously entered parameters <firstName> into the field First Name\u000aAnd line is added to the table with the previously entered parameters <lastName> into the field Last Name\u000aAnd line is added to the table with the previously entered parameters <gender> into the field Gender\u000aAnd line is added to the table with the previously entered parameters <category> into the field Category\u000a\u000a\u000a",
+      "passed": false,
+      "pending": false,
+      "started": 1420459945825,
+      "duration": 2856
+    }
+  ],
+  "stepMatches": []
+}}
