@@ -1,0 +1,16 @@
+<acceptance-test-run title="scenario description" name="scenario description" steps="3" successful="3" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="7" timestamp="2015-01-06T18:43:12.048+04:00">
+  <user-story id="goToHomePage" name="Go to home page" path="thucydidesTest/stories/consult_dictionary/goToHomePage.story"/>
+  <tags>
+    <tag name="Consult dictionary/Go to home page" type="story"/>
+    <tag name="Go to home page" type="story"/>
+  </tags>
+  <test-step result="SUCCESS" duration="1">
+    <description>Given the user is on the Ranorex web page</description>
+  </test-step>
+  <test-step result="SUCCESS" duration="2">
+    <description>When the user press on Ranorex logotype</description>
+  </test-step>
+  <test-step result="SUCCESS" duration="1">
+    <description>Then url is {http://www.ranorex.com/}</description>
+  </test-step>
+</acceptance-test-run>

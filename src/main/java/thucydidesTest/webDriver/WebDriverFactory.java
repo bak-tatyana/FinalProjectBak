@@ -1,14 +1,12 @@
-package thucydidesTest.webDriver;
+package thucydidesTest.WebDriver;
 
+import org.apache.commons.lang3.StringUtils;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.htmlunit.HtmlUnitDriver;
-import org.openqa.selenium.ie.InternetExplorerDriver;
-import org.apache.commons.lang3.StringUtils;
 
 /**
- * Created by Tanya on 05.01.2015.
+ * Created by Tanya on 06.01.2015.
  */
 public class WebDriverFactory {
     private static ThreadLocal<WebDriver> driverThreadLocal = new ThreadLocal<WebDriver>() {
@@ -35,10 +33,7 @@ public class WebDriverFactory {
                 return new FirefoxDriver();
             case CHROME:
                 return new ChromeDriver();
-            case HTML_UNIT:
-                return new HtmlUnitDriver();
-            case IE:
-                return new InternetExplorerDriver();
+
             default:
                 return new FirefoxDriver();
         }
@@ -47,7 +42,7 @@ public class WebDriverFactory {
     private static String getBrowserName() {
         String browser = System.getProperty("browser");
         if (StringUtils.isEmpty(browser)) {
-            browser = "FIREFOX";
+            browser = "CHROME";
         }
 
         return browser.toUpperCase();

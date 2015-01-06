@@ -1,0 +1,16 @@
+<acceptance-test-run title="scenario description" name="scenario description" steps="3" successful="3" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="18" timestamp="2015-01-06T18:43:47.504+04:00">
+  <user-story id="LoadDefaultTable" name="Load default table" path="thucydidesTest/stories/consult_dictionary/LoadDefaultTable.story"/>
+  <tags>
+    <tag name="Consult dictionary/Load default table" type="story"/>
+    <tag name="Load default table" type="story"/>
+  </tags>
+  <test-step result="SUCCESS" duration="1">
+    <description>Given the user is on the Ranorex web page</description>
+  </test-step>
+  <test-step result="SUCCESS" duration="1">
+    <description>When the user press button &apos;Load&apos;</description>
+  </test-step>
+  <test-step result="SUCCESS" duration="14">
+    <description>Then vip count should be 6</description>
+  </test-step>
+</acceptance-test-run>

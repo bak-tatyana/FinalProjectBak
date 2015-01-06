@@ -25,13 +25,13 @@
 </parameters>
 
 <example keyword="Example:">{firstName=1Fn, lastName=1Ln, category=Other, gender=Female}</example>
-<step outcome="failed" keyword="FAILED">Given the user is on the Ranorex web page<failure>net.thucydides.core.webdriver.WebdriverAssertionError: java.lang.NoClassDefFoundError: org/json/JSONException</failure></step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And the user enter <parameter>1Fn</parameter> into First Name field, <parameter>1Ln</parameter> into Last Name field, chose <parameter>Other</parameter> from the list Category and choose <parameter>Female</parameter> from Gender</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">When the user press button Add</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">Then line is added to the table with the previously entered parameters <parameter>1Fn</parameter> into the field First Name</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And line is added to the table with the previously entered parameters <parameter>1Ln</parameter> into the field Last Name</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And line is added to the table with the previously entered parameters <parameter>Female</parameter> into the field Gender</step>
-<step outcome="notPerformed" keyword="NOT PERFORMED">And line is added to the table with the previously entered parameters <parameter>Other</parameter> into the field Category</step>
+<step outcome="successful">Given the user is on the Ranorex web page</step>
+<step outcome="successful">And the user enter <parameter>1Fn</parameter> into First Name field, <parameter>1Ln</parameter> into Last Name field, chose <parameter>Other</parameter> from the list Category and choose <parameter>Female</parameter> from Gender</step>
+<step outcome="successful">When the user press button Add</step>
+<step outcome="successful">Then line is added to the table with the previously entered parameters <parameter>1Fn</parameter> into the field First Name</step>
+<step outcome="successful">And line is added to the table with the previously entered parameters <parameter>1Ln</parameter> into the field Last Name</step>
+<step outcome="successful">And line is added to the table with the previously entered parameters <parameter>Female</parameter> into the field Gender</step>
+<step outcome="successful">And line is added to the table with the previously entered parameters <parameter>Other</parameter> into the field Category</step>
 
 <example keyword="Example:">{firstName=2Fn, lastName=2Ln, category=Music, gender=Female}</example>
 <step outcome="successful">Given the user is on the Ranorex web page</step>
@@ -86,3 +86,51 @@
 <step outcome="successful">And line is added to the table with the previously entered parameters <parameter>7Ln</parameter> into the field Last Name</step>
 <step outcome="successful">And line is added to the table with the previously entered parameters <parameter>Male</parameter> into the field Gender</step>
 <step outcome="successful">And line is added to the table with the previously entered parameters <parameter>Other</parameter> into the field Category</step>
+
+<example keyword="Example:">{firstName=8Fn, lastName=8Ln, category=Music, gender=Male}</example>
+<step outcome="successful">Given the user is on the Ranorex web page</step>
+<step outcome="successful">And the user enter <parameter>8Fn</parameter> into First Name field, <parameter>8Ln</parameter> into Last Name field, chose <parameter>Music</parameter> from the list Category and choose <parameter>Male</parameter> from Gender</step>
+<step outcome="successful">When the user press button Add</step>
+<step outcome="successful">Then line is added to the table with the previously entered parameters <parameter>8Fn</parameter> into the field First Name</step>
+<step outcome="successful">And line is added to the table with the previously entered parameters <parameter>8Ln</parameter> into the field Last Name</step>
+<step outcome="successful">And line is added to the table with the previously entered parameters <parameter>Male</parameter> into the field Gender</step>
+<step outcome="successful">And line is added to the table with the previously entered parameters <parameter>Music</parameter> into the field Category</step>
+
+<example keyword="Example:">{firstName=9Fn, lastName=9Ln, category=Movie, gender=Male}</example>
+<step outcome="successful">Given the user is on the Ranorex web page</step>
+<step outcome="successful">And the user enter <parameter>9Fn</parameter> into First Name field, <parameter>9Ln</parameter> into Last Name field, chose <parameter>Movie</parameter> from the list Category and choose <parameter>Male</parameter> from Gender</step>
+<step outcome="successful">When the user press button Add</step>
+<step outcome="successful">Then line is added to the table with the previously entered parameters <parameter>9Fn</parameter> into the field First Name</step>
+<step outcome="successful">And line is added to the table with the previously entered parameters <parameter>9Ln</parameter> into the field Last Name</step>
+<step outcome="successful">And line is added to the table with the previously entered parameters <parameter>Male</parameter> into the field Gender</step>
+<step outcome="successful">And line is added to the table with the previously entered parameters <parameter>Movie</parameter> into the field Category</step>
+
+<example keyword="Example:">{firstName=10Fn, lastName=10Ln, category=Science, gender=Male}</example>
+<step outcome="successful">Given the user is on the Ranorex web page</step>
+<step outcome="successful">And the user enter <parameter>10Fn</parameter> into First Name field, <parameter>10Ln</parameter> into Last Name field, chose <parameter>Science</parameter> from the list Category and choose <parameter>Male</parameter> from Gender</step>
+<step outcome="successful">When the user press button Add</step>
+<step outcome="successful">Then line is added to the table with the previously entered parameters <parameter>10Fn</parameter> into the field First Name</step>
+<step outcome="successful">And line is added to the table with the previously entered parameters <parameter>10Ln</parameter> into the field Last Name</step>
+<step outcome="successful">And line is added to the table with the previously entered parameters <parameter>Male</parameter> into the field Gender</step>
+<step outcome="successful">And line is added to the table with the previously entered parameters <parameter>Science</parameter> into the field Category</step>
+
+<example keyword="Example:">{firstName=11Fn, lastName=11Ln, category=Sport, gender=Male}</example>
+<step outcome="successful">Given the user is on the Ranorex web page</step>
+<step outcome="successful">And the user enter <parameter>11Fn</parameter> into First Name field, <parameter>11Ln</parameter> into Last Name field, chose <parameter>Sport</parameter> from the list Category and choose <parameter>Male</parameter> from Gender</step>
+<step outcome="successful">When the user press button Add</step>
+<step outcome="successful">Then line is added to the table with the previously entered parameters <parameter>11Fn</parameter> into the field First Name</step>
+<step outcome="successful">And line is added to the table with the previously entered parameters <parameter>11Ln</parameter> into the field Last Name</step>
+<step outcome="successful">And line is added to the table with the previously entered parameters <parameter>Male</parameter> into the field Gender</step>
+<step outcome="successful">And line is added to the table with the previously entered parameters <parameter>Sport</parameter> into the field Category</step>
+
+<example keyword="Example:">{firstName=12Fn, lastName=12Ln, category=Politics, gender=Male}</example>
+<step outcome="successful">Given the user is on the Ranorex web page</step>
+<step outcome="successful">And the user enter <parameter>12Fn</parameter> into First Name field, <parameter>12Ln</parameter> into Last Name field, chose <parameter>Politics</parameter> from the list Category and choose <parameter>Male</parameter> from Gender</step>
+<step outcome="successful">When the user press button Add</step>
+<step outcome="successful">Then line is added to the table with the previously entered parameters <parameter>12Fn</parameter> into the field First Name</step>
+<step outcome="successful">And line is added to the table with the previously entered parameters <parameter>12Ln</parameter> into the field Last Name</step>
+<step outcome="successful">And line is added to the table with the previously entered parameters <parameter>Male</parameter> into the field Gender</step>
+<step outcome="successful">And line is added to the table with the previously entered parameters <parameter>Politics</parameter> into the field Category</step>
+</examples>
+</scenario>
+</story>

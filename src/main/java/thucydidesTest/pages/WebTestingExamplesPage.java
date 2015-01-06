@@ -15,6 +15,7 @@ import org.openqa.selenium.support.ui.Select;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 import static com.thoughtworks.selenium.SeleneseTestBase.assertEquals;
@@ -24,6 +25,7 @@ import static com.thoughtworks.selenium.SeleneseTestBase.assertEquals;
 public class WebTestingExamplesPage extends PageObject {
 
     private static Map<String, Integer> genderMap = new HashMap<String, Integer>();
+
     static {
         genderMap.put("Female", 1);
         genderMap.put("Male", 2);
@@ -38,11 +40,20 @@ public class WebTestingExamplesPage extends PageObject {
     @FindBy(id = "Add")
     private WebElement addButton;
 
+    @FindBy(id = "Load")
+    private WebElement loadButton;
+
+    @FindBy(id = "Delete")
+    private WebElement deleteButton;
+
+    @FindBy(id = "Clear")
+    private WebElement clearButton;
+
     @FindBy(id = "Save")
     private WebElement saveButton;
 
     @FindBy(xpath = "//*[@id='count']")
-    private WebElement vipCount2;
+    private WebElement vipCount;
 
     @FindBy(xpath = "//*[@id='VIPs']/tbody/tr[2]/td[2]")
     private WebElement firstNameInTable;
@@ -56,6 +67,11 @@ public class WebTestingExamplesPage extends PageObject {
     @FindBy(xpath = "//*[@id='VIPs']/tbody/tr[2]/td[5]")
     private WebElement categoryInTable;
 
+    @FindBy(xpath = "//*[@id='alertTextOK']")
+    private WebElement lastNamePopUpWindowText;
+
+    @FindBy(xpath = "//*[@id='logo']/a")
+    private WebElement ranorexLogotype;
 
     public void enterFirstName(String firstName) {
         firstNameField.sendKeys(firstName);
@@ -81,7 +97,7 @@ public class WebTestingExamplesPage extends PageObject {
 
     }
 
-    public void chooseGender (String gender) {
+    public void chooseGender(String gender) {
         Integer option = genderMap.get(gender);
         List<WebElement> radios = getDriver().findElements(By.name("Gender"));
         if (option > 0 && option <= radios.size()) {
@@ -91,33 +107,95 @@ public class WebTestingExamplesPage extends PageObject {
         }
     }
 
-    public void pushAddButton(){
+    public void pushAddButton() {
         addButton.click();
     }
 
-    public void pushSaveButton(){
+    public void pushLoadButton() {
+        loadButton.click();
+    }
+
+
+    public void pushRanorexLogotype() {
+        ranorexLogotype.click();
+    }
+
+    public void pushDeleteButton() {
+        deleteButton.click();
+    }
+
+    public void pushClearButton() {
+        clearButton.click();
+    }
+
+    public void pushSaveButton() {
         saveButton.click();
     }
 
 
-    public void isVipCountEquals2(){
-        assertEquals(vipCount2.getText(), "VIP count: 2");
+    public void isVipCountEquals2() {
+        assertEquals(vipCount.getText(), "VIP count: 2");
     }
 
-    public void isFirstNameCorrectInTable(@Named("firstName") String firstName){
-     assertEquals(firstNameInTable.getText(), firstName);
- //      assertEquals("testNameForFail", firstName);
+    public void isVipCountEquals6() {
+        assertEquals(vipCount.getText(), "VIP count: 6");
     }
 
-    public void isLastNameCorrectInTable(@Named("lastName") String lastName){
+    public void isVipCountEquals5() {
+        assertEquals(vipCount.getText(), "VIP count: 5");
+    }
+
+    public void isVipCountEquals0() {
+        assertEquals(vipCount.getText(), "VIP count: 0");
+    }
+
+    public void isFirstNameCorrectInTable(String firstName) {
+        assertEquals(firstNameInTable.getText(), firstName);
+        //      assertEquals("testNameForFail", firstName);
+    }
+
+    public void isLastNameCorrectInTable(String lastName) {
         assertEquals(lastNameInTable.getText(), lastName);
     }
 
-    public void isGenderCorrectInTable(@Named("gender") String gender){
+    public void isGenderCorrectInTable(String gender) {
         assertEquals(genderInTable.getText(), gender);
     }
 
-    public void isCategoryCorrectInTable(@Named("category") String category){
+    public void isCategoryCorrectInTable(String category) {
         assertEquals(categoryInTable.getText(), category);
+    }
+
+    public void isHomeUrlCorrect(String url) {
+        String currentUrl = getDriver().getCurrentUrl();
+        assertEquals(currentUrl, url);
+    }
+
+
+    public boolean switchToWindowUsingTitle(String title)
+    {
+        String currentWindow = getDriver().getWindowHandle();
+        Set<String> availableWindows = getDriver().getWindowHandles();
+        if (!availableWindows.isEmpty())
+        {
+            for (String windowId : availableWindows)
+            {
+                if (getDriver().switchTo().window(windowId).getTitle().equals(title))
+                {
+                    return true;
+                }
+                else
+                {
+                    getDriver().switchTo().window(currentWindow);
+                }
+            }
+        }
+        return false;
+    }
+
+
+    public void isPopUpWindowCorrect(String lastNamePopUpWindow) {
+        assertEquals(lastNamePopUpWindowText.getText(), lastNamePopUpWindow);
+
     }
 }

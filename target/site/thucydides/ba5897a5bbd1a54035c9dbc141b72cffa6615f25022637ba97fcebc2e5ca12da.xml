@@ -1,0 +1,22 @@
+<acceptance-test-run title="scenario description" name="scenario description" steps="5" successful="5" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="223" timestamp="2015-01-06T18:42:30.859+04:00">
+  <user-story id="TryingToAddFieldToTheTableWithoutLastName" name="Trying to add field to the table without last name" path="thucydidesTest/stories/consult_dictionary/TryingToAddFieldToTheTableWithoutLastName.story"/>
+  <tags>
+    <tag name="Consult dictionary/Trying to add field to the table without last name" type="story"/>
+    <tag name="Trying to add field to the table without last name" type="story"/>
+  </tags>
+  <test-step result="SUCCESS" duration="23247">
+    <description>Is the web page</description>
+  </test-step>
+  <test-step result="SUCCESS" duration="210">
+    <description>Push load button</description>
+  </test-step>
+  <test-step result="SUCCESS" duration="46">
+    <description>Vip count should be 6</description>
+  </test-step>
+  <test-step result="SUCCESS" duration="200">
+    <description>Push clear button</description>
+  </test-step>
+  <test-step result="SUCCESS" duration="47">
+    <description>Vip count should be 0</description>
+  </test-step>
+</acceptance-test-run>

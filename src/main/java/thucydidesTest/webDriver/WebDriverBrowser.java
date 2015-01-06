@@ -1,11 +1,9 @@
-package thucydidesTest.webDriver;
+package thucydidesTest.WebDriver;
 
 /**
- * Created by Tanya on 05.01.2015.
+ * Created by Tanya on 06.01.2015.
  */
 public enum WebDriverBrowser {
     FIREFOX,
-    CHROME,
-    HTML_UNIT,
-    IE
+    CHROME
 }

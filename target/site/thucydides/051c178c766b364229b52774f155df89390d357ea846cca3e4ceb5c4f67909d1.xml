@@ -1,34 +1,40 @@
-<acceptance-test-run title="Adding 2 fields to the table" name="Adding 2 fields to the table" steps="8" successful="0" failures="0" errors="1" skipped="7" ignored="0" pending="0" annotated-result="ERROR" result="ERROR" duration="349" timestamp="2015-01-05T16:12:26.592+04:00">
+<acceptance-test-run title="Adding 2 fields to the table" name="Adding 2 fields to the table" steps="11" successful="11" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="40" timestamp="2015-01-06T18:42:47.877+04:00">
   <user-story id="Adding2FieldsToTheTable" name="Adding2 fields to the table" path="thucydidesTest/stories/consult_dictionary/Adding2FieldsToTheTable.story"/>
   <tags>
     <tag name="Adding2 fields to the table" type="story"/>
     <tag name="Consult dictionary/Adding2 fields to the table" type="story"/>
   </tags>
-  <test-step result="ERROR" duration="12">
+  <test-step result="SUCCESS" duration="2">
     <description>Given the user is on the Ranorex web page</description>
-    <error>java.lang.NoClassDefFoundError: org/json/JSONException</error>
-    <exception>net.thucydides.core.webdriver.WebdriverAssertionError:java.lang.NoClassDefFoundError: org/json/JSONException&#xd;
-[thucydidesTest.steps.AddingAFieldUserSteps.is_the_web_page(AddingAFieldUserSteps.java:19), thucydidesTest.jbehave.DefinitionStepsAdding2FieldsToTheTable.givenTheUserIsOnTheRanorexWebPage(DefinitionStepsAdding2FieldsToTheTable.java:23)]</exception>
   </test-step>
-  <test-step result="SKIPPED" duration="1">
+  <test-step result="SUCCESS" duration="2">
     <description>Given the user enter first name {Frank}</description>
   </test-step>
-  <test-step result="SKIPPED" duration="1">
+  <test-step result="SUCCESS" duration="2">
     <description>Given the user enter last name {Sinatra}</description>
   </test-step>
-  <test-step result="SKIPPED" duration="0">
+  <test-step result="SUCCESS" duration="2">
     <description>When the user press button &apos;Add&apos; first time</description>
   </test-step>
-  <test-step result="SKIPPED" duration="0">
+  <test-step result="SUCCESS" duration="6">
     <description>Given the user enter first name {Kings}</description>
   </test-step>
-  <test-step result="SKIPPED" duration="0">
+  <test-step result="SUCCESS" duration="1">
     <description>Given the user enter last name {Of Leon}</description>
   </test-step>
-  <test-step result="SKIPPED" duration="1">
+  <test-step result="SUCCESS" duration="2">
     <description>When the user press button &apos;Add&apos; second time</description>
   </test-step>
-  <test-step result="SKIPPED" duration="1">
+  <test-step result="SUCCESS" duration="19">
     <description>Then vip count should be 2</description>
+  </test-step>
+  <test-step result="SUCCESS" duration="58294">
+    <description>Is the web page</description>
+  </test-step>
+  <test-step result="SUCCESS" duration="857">
+    <description>Push load button</description>
+  </test-step>
+  <test-step result="SUCCESS" duration="41">
+    <description>Vip count should be 6</description>
   </test-step>
 </acceptance-test-run>

@@ -1,4 +1,4 @@
-<acceptance-test-run title="Adding a field to the table with parametrs" name="Adding a field to the table with parametrs: &lt;firstName&gt;, &lt;lastName&gt;, &lt;category&gt;, &lt;gender&gt;" steps="49" successful="42" failures="0" errors="1" skipped="6" ignored="0" pending="0" annotated-result="ERROR" result="ERROR" duration="252" timestamp="2015-01-05T16:12:28.790+04:00">
+<acceptance-test-run title="Adding a field to the table with parametrs" name="Adding a field to the table with parametrs: &lt;firstName&gt;, &lt;lastName&gt;, &lt;category&gt;, &lt;gender&gt;" steps="84" successful="84" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="266" timestamp="2015-01-06T14:50:11.795+04:00">
   <user-story id="AddingAFieldToTheTable_sample2" name="Adding a field to the table sample2" path="thucydidesTest/stories/consult_dictionary/AddingAFieldToTheTable_sample2.story"/>
   <tags>
     <tag name="Adding a field to the table sample2" type="story"/>
@@ -21,7 +21,7 @@
         <value>Other</value>
         <value>Female</value>
       </row>
-      <row result="ERROR">
+      <row result="SUCCESS">
         <value>2Fn</value>
         <value>2Ln</value>
         <value>Music</value>
@@ -63,25 +63,25 @@
         <value>Music</value>
         <value>Male</value>
       </row>
-      <row>
+      <row result="SUCCESS">
         <value>9Fn</value>
         <value>9Ln</value>
         <value>Movie</value>
         <value>Male</value>
       </row>
-      <row>
+      <row result="SUCCESS">
         <value>10Fn</value>
         <value>10Ln</value>
         <value>Science</value>
         <value>Male</value>
       </row>
-      <row>
+      <row result="SUCCESS">
         <value>11Fn</value>
         <value>11Ln</value>
         <value>Sport</value>
         <value>Male</value>
       </row>
-      <row>
+      <row result="SUCCESS">
         <value>12Fn</value>
         <value>12Ln</value>
         <value>Politics</value>
@@ -89,66 +89,63 @@
       </row>
     </rows>
   </examples>
-  <test-group name="[1] {firstName=2Fn, lastName=2Ln, category=Music, gender=Female}" result="ERROR">
-    <test-step result="ERROR" duration="4">
+  <test-group name="[1] {firstName=1Fn, lastName=1Ln, category=Other, gender=Female}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="2">
       <description>Given the user is on the Ranorex web page</description>
-      <error>java.lang.NoClassDefFoundError: org/json/JSONException</error>
-      <exception>net.thucydides.core.webdriver.WebdriverAssertionError:java.lang.NoClassDefFoundError: org/json/JSONException&#xd;
-[thucydidesTest.steps.AddingAFieldUserSteps.is_the_web_page(AddingAFieldUserSteps.java:19), thucydidesTest.jbehave.DefinitionStepsAdding2FieldsToTheTable.givenTheUserIsOnTheRanorexWebPage(DefinitionStepsAdding2FieldsToTheTable.java:23)]</exception>
     </test-step>
-    <test-step result="SKIPPED" duration="1">
+    <test-step result="SUCCESS" duration="1">
       <description>And the user enter {1Fn} into First Name field, {1Ln} into Last Name field, chose {Other} from the list Category and choose {Female} from Gender</description>
     </test-step>
-    <test-step result="SKIPPED" duration="0">
+    <test-step result="SUCCESS" duration="1">
       <description>When the user press button Add</description>
     </test-step>
-    <test-step result="SKIPPED" duration="0">
+    <test-step result="SUCCESS" duration="1">
       <description>Then line is added to the table with the previously entered parameters {1Fn} into the field First Name</description>
     </test-step>
-    <test-step result="SKIPPED" duration="0">
+    <test-step result="SUCCESS" duration="1">
       <description>And line is added to the table with the previously entered parameters {1Ln} into the field Last Name</description>
     </test-step>
-    <test-step result="SKIPPED" duration="1">
+    <test-step result="SUCCESS" duration="1">
       <description>And line is added to the table with the previously entered parameters {Female} into the field Gender</description>
     </test-step>
-    <test-step result="SKIPPED" duration="1">
+    <test-step result="SUCCESS" duration="1">
       <description>And line is added to the table with the previously entered parameters {Other} into the field Category</description>
     </test-step>
   </test-group>
-  <test-group name="[2] {firstName=3Fn, lastName=3Ln, category=Movie, gender=Female}" result="SUCCESS">
+  <test-group name="[2] {firstName=2Fn, lastName=2Ln, category=Music, gender=Female}" result="SUCCESS">
     <test-step result="SUCCESS" duration="1">
       <description>Given the user is on the Ranorex web page</description>
     </test-step>
-    <test-step result="SUCCESS" duration="6">
+    <test-step result="SUCCESS" duration="1">
       <description>And the user enter {2Fn} into First Name field, {2Ln} into Last Name field, chose {Music} from the list Category and choose {Female} from Gender</description>
     </test-step>
     <test-step result="SUCCESS" duration="1">
       <description>When the user press button Add</description>
     </test-step>
-    <test-step result="SUCCESS" duration="1">
+    <test-step result="SUCCESS" duration="0">
       <description>Then line is added to the table with the previously entered parameters {2Fn} into the field First Name</description>
     </test-step>
-    <test-step result="SUCCESS" duration="2">
+    <test-step result="SUCCESS" duration="1">
       <description>And line is added to the table with the previously entered parameters {2Ln} into the field Last Name</description>
     </test-step>
-    <test-step result="SUCCESS" duration="2">
+    <test-step result="SUCCESS" duration="1">
       <description>And line is added to the table with the previously entered parameters {Female} into the field Gender</description>
     </test-step>
-    <test-step result="SUCCESS" duration="1">
+    <test-step result="SUCCESS" duration="4">
       <description>And line is added to the table with the previously entered parameters {Music} into the field Category</description>
     </test-step>
   </test-group>
-  <test-group name="[3] {firstName=4Fn, lastName=4Ln, category=Science, gender=Female}" result="SUCCESS">
+  <test-group name="[3] {firstName=3Fn, lastName=3Ln, category=Movie, gender=Female}" result="SUCCESS">
     <test-step result="SUCCESS" duration="1">
       <description>Given the user is on the Ranorex web page</description>
     </test-step>
-    <test-step result="SUCCESS" duration="3">
+    <test-step result="SUCCESS" duration="2">
       <description>And the user enter {3Fn} into First Name field, {3Ln} into Last Name field, chose {Movie} from the list Category and choose {Female} from Gender</description>
     </test-step>
-    <test-step result="SUCCESS" duration="2">
+    <test-step result="SUCCESS" duration="1">
       <description>When the user press button Add</description>
     </test-step>
-    <test-step result="SUCCESS" duration="2">
+    <test-step result="SUCCESS" duration="1">
       <description>Then line is added to the table with the previously entered parameters {3Fn} into the field First Name</description>
     </test-step>
     <test-step result="SUCCESS" duration="1">
@@ -161,54 +158,54 @@
       <description>And line is added to the table with the previously entered parameters {Movie} into the field Category</description>
     </test-step>
   </test-group>
-  <test-group name="[4] {firstName=5Fn, lastName=5Ln, category=Sport, gender=Female}" result="SUCCESS">
-    <test-step result="SUCCESS" duration="12">
+  <test-group name="[4] {firstName=4Fn, lastName=4Ln, category=Science, gender=Female}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="1">
       <description>Given the user is on the Ranorex web page</description>
     </test-step>
-    <test-step result="SUCCESS" duration="16">
+    <test-step result="SUCCESS" duration="2">
       <description>And the user enter {4Fn} into First Name field, {4Ln} into Last Name field, chose {Science} from the list Category and choose {Female} from Gender</description>
     </test-step>
     <test-step result="SUCCESS" duration="1">
       <description>When the user press button Add</description>
     </test-step>
-    <test-step result="SUCCESS" duration="2">
+    <test-step result="SUCCESS" duration="1">
       <description>Then line is added to the table with the previously entered parameters {4Fn} into the field First Name</description>
     </test-step>
     <test-step result="SUCCESS" duration="1">
       <description>And line is added to the table with the previously entered parameters {4Ln} into the field Last Name</description>
     </test-step>
-    <test-step result="SUCCESS" duration="2">
+    <test-step result="SUCCESS" duration="1">
       <description>And line is added to the table with the previously entered parameters {Female} into the field Gender</description>
     </test-step>
-    <test-step result="SUCCESS" duration="8">
+    <test-step result="SUCCESS" duration="1">
       <description>And line is added to the table with the previously entered parameters {Science} into the field Category</description>
     </test-step>
   </test-group>
-  <test-group name="[5] {firstName=8Fn, lastName=8Ln, category=Music, gender=Male}" result="SUCCESS">
+  <test-group name="[5] {firstName=5Fn, lastName=5Ln, category=Sport, gender=Female}" result="SUCCESS">
     <test-step result="SUCCESS" duration="1">
       <description>Given the user is on the Ranorex web page</description>
     </test-step>
-    <test-step result="SUCCESS" duration="10">
+    <test-step result="SUCCESS" duration="1">
       <description>And the user enter {5Fn} into First Name field, {5Ln} into Last Name field, chose {Sport} from the list Category and choose {Female} from Gender</description>
     </test-step>
-    <test-step result="SUCCESS" duration="12">
+    <test-step result="SUCCESS" duration="1">
       <description>When the user press button Add</description>
     </test-step>
-    <test-step result="SUCCESS" duration="11">
+    <test-step result="SUCCESS" duration="1">
       <description>Then line is added to the table with the previously entered parameters {5Fn} into the field First Name</description>
     </test-step>
-    <test-step result="SUCCESS" duration="2">
+    <test-step result="SUCCESS" duration="0">
       <description>And line is added to the table with the previously entered parameters {5Ln} into the field Last Name</description>
     </test-step>
     <test-step result="SUCCESS" duration="1">
       <description>And line is added to the table with the previously entered parameters {Female} into the field Gender</description>
     </test-step>
-    <test-step result="SUCCESS" duration="2">
+    <test-step result="SUCCESS" duration="1">
       <description>And line is added to the table with the previously entered parameters {Sport} into the field Category</description>
     </test-step>
   </test-group>
-  <test-group name="[6] {firstName=11Fn, lastName=11Ln, category=Sport, gender=Male}" result="SUCCESS">
-    <test-step result="SUCCESS" duration="3">
+  <test-group name="[6] {firstName=6Fn, lastName=6Ln, category=Politics, gender=Female}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="1">
       <description>Given the user is on the Ranorex web page</description>
     </test-step>
     <test-step result="SUCCESS" duration="1">
@@ -220,18 +217,18 @@
     <test-step result="SUCCESS" duration="1">
       <description>Then line is added to the table with the previously entered parameters {6Fn} into the field First Name</description>
     </test-step>
-    <test-step result="SUCCESS" duration="2">
+    <test-step result="SUCCESS" duration="1">
       <description>And line is added to the table with the previously entered parameters {6Ln} into the field Last Name</description>
     </test-step>
-    <test-step result="SUCCESS" duration="1">
+    <test-step result="SUCCESS" duration="28">
       <description>And line is added to the table with the previously entered parameters {Female} into the field Gender</description>
     </test-step>
     <test-step result="SUCCESS" duration="1">
       <description>And line is added to the table with the previously entered parameters {Politics} into the field Category</description>
     </test-step>
   </test-group>
-  <test-group name="[7] {firstName=12Fn, lastName=12Ln, category=Politics, gender=Male}" result="SUCCESS">
-    <test-step result="SUCCESS" duration="4">
+  <test-group name="[7] {firstName=7Fn, lastName=7Ln, category=Other, gender=Male}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="1">
       <description>Given the user is on the Ranorex web page</description>
     </test-step>
     <test-step result="SUCCESS" duration="1">
@@ -240,17 +237,132 @@
     <test-step result="SUCCESS" duration="2">
       <description>When the user press button Add</description>
     </test-step>
-    <test-step result="SUCCESS" duration="1">
+    <test-step result="SUCCESS" duration="2">
       <description>Then line is added to the table with the previously entered parameters {7Fn} into the field First Name</description>
     </test-step>
-    <test-step result="SUCCESS" duration="0">
+    <test-step result="SUCCESS" duration="1">
       <description>And line is added to the table with the previously entered parameters {7Ln} into the field Last Name</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="4">
+      <description>And line is added to the table with the previously entered parameters {Male} into the field Gender</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1">
+      <description>And line is added to the table with the previously entered parameters {Other} into the field Category</description>
+    </test-step>
+  </test-group>
+  <test-group name="[8] {firstName=8Fn, lastName=8Ln, category=Music, gender=Male}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="1">
+      <description>Given the user is on the Ranorex web page</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>And the user enter {8Fn} into First Name field, {8Ln} into Last Name field, chose {Music} from the list Category and choose {Male} from Gender</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1">
+      <description>When the user press button Add</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1">
+      <description>Then line is added to the table with the previously entered parameters {8Fn} into the field First Name</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="3">
+      <description>And line is added to the table with the previously entered parameters {8Ln} into the field Last Name</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1">
+      <description>And line is added to the table with the previously entered parameters {Male} into the field Gender</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>And line is added to the table with the previously entered parameters {Music} into the field Category</description>
+    </test-step>
+  </test-group>
+  <test-group name="[9] {firstName=9Fn, lastName=9Ln, category=Movie, gender=Male}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="1">
+      <description>Given the user is on the Ranorex web page</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>And the user enter {9Fn} into First Name field, {9Ln} into Last Name field, chose {Movie} from the list Category and choose {Male} from Gender</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1">
+      <description>When the user press button Add</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="3">
+      <description>Then line is added to the table with the previously entered parameters {9Fn} into the field First Name</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="3">
+      <description>And line is added to the table with the previously entered parameters {9Ln} into the field Last Name</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="3">
+      <description>And line is added to the table with the previously entered parameters {Male} into the field Gender</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>And line is added to the table with the previously entered parameters {Movie} into the field Category</description>
+    </test-step>
+  </test-group>
+  <test-group name="[10] {firstName=10Fn, lastName=10Ln, category=Science, gender=Male}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="1">
+      <description>Given the user is on the Ranorex web page</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="11">
+      <description>And the user enter {10Fn} into First Name field, {10Ln} into Last Name field, chose {Science} from the list Category and choose {Male} from Gender</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1">
+      <description>When the user press button Add</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1">
+      <description>Then line is added to the table with the previously entered parameters {10Fn} into the field First Name</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="9">
+      <description>And line is added to the table with the previously entered parameters {10Ln} into the field Last Name</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="0">
+      <description>And line is added to the table with the previously entered parameters {Male} into the field Gender</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1">
+      <description>And line is added to the table with the previously entered parameters {Science} into the field Category</description>
+    </test-step>
+  </test-group>
+  <test-group name="[11] {firstName=11Fn, lastName=11Ln, category=Sport, gender=Male}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="1">
+      <description>Given the user is on the Ranorex web page</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1">
+      <description>And the user enter {11Fn} into First Name field, {11Ln} into Last Name field, chose {Sport} from the list Category and choose {Male} from Gender</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="0">
+      <description>When the user press button Add</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="3">
+      <description>Then line is added to the table with the previously entered parameters {11Fn} into the field First Name</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1">
+      <description>And line is added to the table with the previously entered parameters {11Ln} into the field Last Name</description>
     </test-step>
     <test-step result="SUCCESS" duration="1">
       <description>And line is added to the table with the previously entered parameters {Male} into the field Gender</description>
     </test-step>
     <test-step result="SUCCESS" duration="1">
-      <description>And line is added to the table with the previously entered parameters {Other} into the field Category</description>
+      <description>And line is added to the table with the previously entered parameters {Sport} into the field Category</description>
+    </test-step>
+  </test-group>
+  <test-group name="[12] {firstName=12Fn, lastName=12Ln, category=Politics, gender=Male}" result="SUCCESS">
+    <test-step result="SUCCESS" duration="1">
+      <description>Given the user is on the Ranorex web page</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1">
+      <description>And the user enter {12Fn} into First Name field, {12Ln} into Last Name field, chose {Politics} from the list Category and choose {Male} from Gender</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="2">
+      <description>When the user press button Add</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1">
+      <description>Then line is added to the table with the previously entered parameters {12Fn} into the field First Name</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1">
+      <description>And line is added to the table with the previously entered parameters {12Ln} into the field Last Name</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1">
+      <description>And line is added to the table with the previously entered parameters {Male} into the field Gender</description>
+    </test-step>
+    <test-step result="SUCCESS" duration="1">
+      <description>And line is added to the table with the previously entered parameters {Politics} into the field Category</description>
     </test-step>
   </test-group>
 </acceptance-test-run>

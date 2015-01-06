@@ -1,15 +1,17 @@
 package thucydidesTest.steps;
 
-import thucydidesTest.webDriver.WebDriverFactory;
+import thucydidesTest.WebDriver.WebDriverFactory;
+import org.apache.log4j.Logger;
 import org.jbehave.core.annotations.AfterStory;
 import org.jbehave.core.annotations.BeforeStory;
-import org.apache.log4j.Logger;
+import thucydidesTest.pages.WebTestingExamplesPage;
+
 /**
- * Created by Tanya on 05.01.2015.
+ * Created by Tanya on 06.01.2015.
  */
 public class LifecycleSteps {
     private static final Logger LOG = Logger.getLogger(LifecycleSteps.class);
-
+    WebTestingExamplesPage webTestingExamplesPage;
     @BeforeStory
     public void initWebDrover() {
         LOG.info("BeforeStory init web driver");

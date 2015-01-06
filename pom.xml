@@ -13,7 +13,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <thucydides.version>0.9.275</thucydides.version>
         <thucydides.jbehave.version>0.9.275</thucydides.jbehave.version>
-        <webdriver.driver>HTML_UNIT</webdriver.driver>
+        <webdriver.driver>firefox</webdriver.driver>
     </properties>
 
     <dependencies>
@@ -53,11 +53,6 @@
             <artifactId>lambdaj</artifactId>
             <version>2.3.3</version>
         </dependency>
-        <dependency>
-            <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-htmlunit-driver</artifactId>
-            <version>2.44.0</version>
-        </dependency>
     </dependencies>
     <build>
         <plugins>
@@ -78,10 +73,6 @@
                             <value>${webdriver.driver}</value>
                         </property>
                         <property>
-                            <name>phantomjs.binary.path</name>
-                            <value>${project.basedir}/bin/phantomjs</value>
-                        </property>
-                          <property>
                             <name>webdriver.chrome.driver</name>
                             <value>${project.basedir}/chromedriver.exe</value>
                         </property>
