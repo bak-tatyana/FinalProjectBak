@@ -1,8 +1,0 @@
-<story path="thucydidesTest/stories/consult_dictionary/DeleteAFieldFromDefaultTable.story" title="">
-<scenario keyword="Scenario:" title="scenario description">
-<step outcome="successful">Given the user is on the Ranorex web page</step>
-<step outcome="successful">Given the user press button &apos;Load&apos;</step>
-<step outcome="successful">When the user press button &apos;Delete&apos;</step>
-<step outcome="successful">Then vip count should be 5</step>
-</scenario>
-</story>
